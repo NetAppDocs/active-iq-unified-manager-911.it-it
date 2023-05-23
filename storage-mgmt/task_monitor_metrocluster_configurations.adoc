@@ -1,0 +1,48 @@
+---
+permalink: storage-mgmt/task_monitor_metrocluster_configurations.html 
+sidebar: sidebar 
+keywords: monitor, metrocluster, configurations 
+summary: 'È possibile monitorare i problemi di connettività nella configurazione MetroCluster. I dettagli includono lo stato dei componenti e della connettività all"interno di un cluster e lo stato della connettività tra i cluster nella configurazione MetroCluster.' 
+---
+= Monitoraggio delle configurazioni MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare i problemi di connettività nella configurazione MetroCluster. I dettagli includono lo stato dei componenti e della connettività all'interno di un cluster e lo stato della connettività tra i cluster nella configurazione MetroCluster.
+
+*Cosa ti serve*
+
+* I cluster locali e remoti nella configurazione MetroCluster devono essere aggiunti a Active IQ Unified Manager.
+* È necessario disporre del ruolo di operatore, amministratore dell'applicazione o amministratore dello storage.
+
+
+È possibile utilizzare le informazioni visualizzate nella pagina Cluster / Health Details per correggere eventuali problemi di connettività. Ad esempio, se la connettività tra il nodo e lo switch in un cluster non è attiva, viene visualizzata la seguente icona:
+
+image::../media/node_switch_connectivity.gif[connettività dello switch di nodo]
+
+Spostando il puntatore sull'icona, è possibile visualizzare informazioni dettagliate sull'evento generato.
+
+Unified Manager utilizza gli avvisi di stato del sistema per monitorare lo stato dei componenti e la connettività nella configurazione di MetroCluster.
+
+La scheda connettività MetroCluster viene visualizzata solo per i cluster in una configurazione MetroCluster.
+
+.Fasi
+. Nel riquadro di spostamento a sinistra, fare clic su *Storage* > *Clusters*.
++
+Viene visualizzato un elenco di tutti i cluster monitorati.
+
+. Dalla vista *Health: Tutti i cluster*, fare clic sul nome del cluster per il quale si desidera visualizzare i dettagli di configurazione di MetroCluster.
+. Nella pagina dei dettagli *Cluster / integrità*, fare clic sulla scheda *connettività MetroCluster*.
++
+La topologia della configurazione MetroCluster viene visualizzata nell'area degli oggetti del cluster corrispondente.
+
+
+
+Se si riscontrano problemi di connettività nella configurazione MetroCluster, è necessario accedere a Gestione sistema o all'interfaccia utente di ONTAP per risolvere i problemi.
+
+*Informazioni correlate*
+
+link:../health-checker/reference_health_cluster_details_page.html["Pagina dei dettagli del cluster/stato di salute"]
